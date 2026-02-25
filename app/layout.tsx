@@ -4,8 +4,12 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 
 export const metadata = {
-  title: 'My Project',
-  description: 'Nextra documentation site',
+  title: 'Jayr Sullano — WordPress Developer & Project Lead',
+  description: 'Portfolio of Jayr Sullano — WordPress/WooCommerce Developer, Project Manager, and AI-augmented workflow specialist.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 export default async function RootLayout({
@@ -15,11 +19,11 @@ export default async function RootLayout({
 }) {
   const navbar = (
     <Navbar
-      logo={<span style={{ fontWeight: 700 }}>My Project</span>}
-      projectLink="https://github.com/shuding/nextra-docs-template"
+      logo={<span style={{ fontWeight: 700 }}>Jayr Sullano</span>}
+      projectLink="https://github.com/jarutosurano"
     />
   )
-  const footer = <Footer>MIT {new Date().getFullYear()} © Nextra Docs Template.</Footer>
+  const footer = <Footer>© {new Date().getFullYear()} Jayr Sullano. Built with Nextra & Claude Code.</Footer>
 
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
@@ -28,7 +32,7 @@ export default async function RootLayout({
         <Layout
           navbar={navbar}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/shuding/nextra-docs-template"
+          docsRepositoryBase="https://github.com/jarutosurano/me"
           footer={footer}
         >
           {children}

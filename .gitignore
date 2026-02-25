@@ -1,2 +1,6 @@
 .next
 node_modules
+
+# Private data - never push
+.local/
+*.pdf
