@@ -42,6 +42,7 @@ Available slash commands for Claude Code:
 | `/commit` | Git commit workflow |
 | `/code-review` | Code review |
 | `/security-review` | Security review |
+| `/apply` | Generate tailored job application (merged cover letter + resume DOCX) |
 
 ## Active Project: Job Application Generator
 
